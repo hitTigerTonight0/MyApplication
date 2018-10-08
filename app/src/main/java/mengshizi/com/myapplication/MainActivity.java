@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //测试
-        //分支1.1.
+        //分支1.2.0
 
     }
 }
