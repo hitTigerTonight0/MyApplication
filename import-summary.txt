@@ -1,0 +1,141 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From ZhiMaSDKLib:
+* .gitignore
+* AndroidManifest.xml
+* ic_launcher-web.png
+* proguard-project.txt
+* res\
+* res\anim\
+* res\anim\mg_liveness_leftout.xml
+* res\anim\mg_liveness_rightin.xml
+* res\anim\mg_slide_in_left.xml
+* res\anim\mg_slide_in_right.xml
+* res\anim\mg_slide_out_left.xml
+* res\anim\mg_slide_out_right.xml
+* res\drawable-hdpi\
+* res\drawable-hdpi\ic_launcher.png
+* res\drawable-mdpi\
+* res\drawable-mdpi\ic_launcher.png
+* res\drawable-xhdpi\
+* res\drawable-xhdpi\ic_launcher.png
+* res\drawable-xxhdpi\
+* res\drawable-xxhdpi\ic_launcher.png
+* res\drawable-xxhdpi\liveness_eye.png
+* res\drawable-xxhdpi\liveness_head.png
+* res\drawable-xxhdpi\liveness_head_down.png
+* res\drawable-xxhdpi\liveness_head_left.png
+* res\drawable-xxhdpi\liveness_head_right.png
+* res\drawable-xxhdpi\liveness_head_up.png
+* res\drawable-xxhdpi\liveness_layout_bottom_tips.png
+* res\drawable-xxhdpi\liveness_layout_camera_mask.png
+* res\drawable-xxhdpi\liveness_layout_head_mask.png
+* res\drawable-xxhdpi\liveness_left.png
+* res\drawable-xxhdpi\liveness_mouth.png
+* res\drawable-xxhdpi\liveness_phoneimage.png
+* res\drawable-xxhdpi\liveness_right.png
+* res\drawable-xxhdpi\mg_liveness_cancel.png
+* res\drawable-xxhdpi\mg_liveness_circle.png
+* res\drawable-xxhdpi\mg_liveness_logo.png
+* res\drawable-xxhdpi\mg_liveness_num_green.png
+* res\drawable-xxhdpi\mg_liveness_num_gry.png
+* res\drawable-xxhdpi\mg_liveness_surfacemask.9.png
+* res\drawable-xxhdpi\mg_returnimage.png
+* res\drawable\
+* res\drawable\mg_bg_return_n.xml
+* res\drawable\mg_bg_return_p.xml
+* res\drawable\mg_bg_return_select.xml
+* res\drawable\mg_liveness_eye_open_closed.xml
+* res\drawable\mg_liveness_head_pitch.xml
+* res\drawable\mg_liveness_head_yaw.xml
+* res\drawable\mg_liveness_mouth_open_closed.xml
+* res\drawable\progressbar.xml
+* res\layout\
+* res\layout\mg_liveness_detection_step.xml
+* res\layout\mg_livenessdetect_layout.xml
+* res\layout\mg_network_layout.xml
+* res\layout\mg_title_layout.xml
+* res\layout\mg_webview_layout.xml
+* res\raw\
+* res\raw\livenessmodel
+* res\raw\meglive_eye_blink.mp3
+* res\raw\meglive_failed.mp3
+* res\raw\meglive_mouth_open.mp3
+* res\raw\meglive_pitch_down.mp3
+* res\raw\meglive_success.mp3
+* res\raw\meglive_well_done.mp3
+* res\raw\meglive_yaw.mp3
+* res\values-1800x1080\
+* res\values-1800x1080\dimens.xml
+* res\values\
+* res\values\dimens.xml
+* res\values\strings.xml
+* res\values\styles.xml
+From ZhiMaSDKProject:
+* .gitignore
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:26.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In ZhiMaSDKLib:
+* libs\arm64-v8a\liblivenessdetection_v2.4.5.so => zhiMaSDKLib\src\main\jniLibs\arm64-v8a\liblivenessdetection_v2.4.5.so
+* libs\armeabi-v7a\liblivenessdetection_v2.4.5.so => zhiMaSDKLib\src\main\jniLibs\armeabi-v7a\liblivenessdetection_v2.4.5.so
+* libs\x86\liblivenessdetection_v2.4.5.so => zhiMaSDKLib\src\main\jniLibs\x86\liblivenessdetection_v2.4.5.so
+* libs\ZMCert_SDK.jar => zhiMaSDKLib\libs\ZMCert_SDK.jar
+In ZhiMaSDKProject:
+* AndroidManifest.xml => zhiMaSDKProject\src\main\AndroidManifest.xml
+* lint.xml => zhiMaSDKProject\lint.xml
+* res\ => zhiMaSDKProject\src\main\res\
+* src\ => zhiMaSDKProject\src\main\java\
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
